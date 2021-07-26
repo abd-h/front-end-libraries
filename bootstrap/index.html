@@ -13,17 +13,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
+    <title>Responsive Design | with Bootstrap Fluid Containers</title>
 </head>
 
 <body>
   <div class="container-fluid">
-        <h1>Bootstrap</h1>
+      
         
         <section>
-            <h2>CatPhotoApp</h2>
+            <h1 class="text-center">CatPhotoApp</h1>
 
-            <a href="#"><img class="smaller-image thick-green-border img-responsive" src="./images/blk-and white-cat.jpeg" alt="A cute Kitten with a mazing black and white stripes"></a>
+            <a href="#"><img class="smaller-image thick-green-border img-responsive" src="./images/blk-and white-cat.jpeg" alt="A cute Kitten with a mazing black and white stripes"><br>
+                
+                <img class="img-responsive img-rounded img-two" src="./images/cat-pic.jpeg" alt=""></a>
+
+            <button class="btn btn-primary btn-block"  type="submit">Like</button>
+            <button class="btn btn-block btn-info" type="submit">Info</button>
+            <!-- delete button -->
+            <button class="btn btn-block btn-danger" type="submit">Delete</button>
+
+            
 
             <p>
                 click here for <a href="#">cat photos</a>.
@@ -46,22 +55,20 @@
 
             <form>
                   <label for=""><input type="radio" name="indoor-outdoor">Indoor</label>  
-                  <label for=""><input type="radio" name="" value="indoor-outdoor">Outdoor</label>  
+                  <label for=""><input type="radio" name="indoor-outdoor">Outdoor</label>  
                   <label for=""><input type="checkbox" name="personality">Loving</label>  
                   <label for=""><input type="checkbox" name="personality">Lazy</label>  
                   <label for=""><input type="checkbox" name="personality">Crazy</label>  
                   <br>
                   <input type="text" placeholder="cat photo URL" required>
                   <button type="submit">Submit</button>
+                  
             </form>
         
             <p>
-                Bootstrap is a front end framework used to design responsive web pages and applications. It takes a mobile-first
-                approach to web development, and includes pre-built CSS styles and classes, plus some JavaScript functionality.
+                Bootstrap is a front end framework used to design responsive web pages and applications. It takes a mobile-first approach to web development, and includes pre-built CSS styles and classes, plus some JavaScript functionality.
         
-                In this course, you'll learn how to build responsive websites with Bootstrap, and use its included classes to
-                style
-                buttons, images, forms, navigation, and other common elements.
+                In this course, you'll learn how to build responsive websites with Bootstrap, and use its included classes to style buttons, images, forms, navigation, and other common elements.
             </p>
         
             <hr>
@@ -70,23 +77,17 @@
             </h2>
             <p class="p2">
                 In the HTML5 and CSS section of freeCodeCamp we built a Cat Photo App.
-                Now let's go back to it. This time, we'll style
-                it using the popular Bootstrap responsive CSS framework.
+                Now let's go back to it. This time, we'll style it using the popular Bootstrap responsive CSS framework.
         
-                Bootstrap will figure out how wide your screen is and respond by resizing your HTML elements - hence the name
-                responsive
-                design.
-        
-                With responsive design, there is no need to design a mobile version of your website. It will look good on
-                devices with screens of any width.
+                Bootstrap will figure out how wide your screen is and respond by resizing your HTML elements - hence the name responsive design.
+                
+                With responsive design, there is no need to design a mobile version of your website. It will look good on devices with screens of any width.
         
                 You can add Bootstrap to any app by adding the following code to the top of your HTML:
         
                 Note that using either > or /> to close the link tag is acceptable.
         
-                To get started, we should nest all of our HTML (except the link tag and the style element) in a div element with
-                the
-                class container-fluid.
+                To get started, we should nest all of our HTML (except the link tag and the style element) in a div element with the class container-fluid.
             </p>
         </section>
 
@@ -101,6 +102,88 @@
                 Fortunately, with Bootstrap, all we need to do is add the img-responsive class to your image. Do this, and the image
                 should perfectly fit the width of your page.
             </p>
+        </article>
+
+        <article>
+            <h2>Center Text with Bootstrap</h2>
+            <p>
+            Now that we're using Bootstrap, we can center our heading element to make it look better. All we need to do is add the
+            class text-center to our h2 element.
+            
+            Remember that you can add several classes to the same element by separating each of them with a space, like h1 element:
+            <!-- <h2 class="red-text text-center">your text</h2> -->
+            </p>
+            
+        </article>
+
+        <article>
+            <h2>Create a Bootstrap Button</h2>
+            <p>
+                
+                Bootstrap has its own styles for button elements, which look much better than the plain HTML ones.
+                
+                Create a new button element below your large kitten photo. Give it the btn and btn-default classes, as well as the text
+                of Like.
+
+            </p>
+        </article>
+
+        <article>
+            <h2>Taste the Bootstrap Button Color Rainbow</h2>
+            <p>
+                The btn-primary class is the main color you'll use in your app. It is useful for highlighting actions you want your user to take.
+                
+                Replace Bootstrap's btn-default class with btn-primary in your button.
+                
+                Note that this button will still need the btn and btn-block classes.
+            </p>
+        </article>
+
+        <article>
+            <h2>Call out Optional Actions with btn-info</h2>
+            <p>
+                
+                Bootstrap comes with several pre-defined colors for buttons. The btn-info class is used to call attention to optional actions that the user can take.
+                
+                Create a new block-level Bootstrap button below your Like button with the text Info, and add Bootstrap's btn-info and btn-block classes to it.
+                
+                Note that these buttons still need the btn and btn-block classes.
+
+            </p>
+        </article>
+
+        <article>
+            <h2>Warn Your Users of a Dangerous Action with btn-danger</h2>
+            <p>
+                
+                Bootstrap comes with several pre-defined colors for buttons. 
+                The btn-danger class is the button color you'll use to
+                notify users that the button performs a destructive action, such as deleting a cat photo.
+                
+                Create a button with the text Delete and give it the class btn-danger.
+                
+                Note that these buttons still need the btn and btn-block classes.
+            </p>
+        </article>
+
+        <article>
+            <h2></h2>
+            <p></p>
+        </article>
+
+        <article>
+            <h2></h2>
+            <p></p>
+        </article>
+
+        <article>
+            <h2></h2>
+            <p></p>
+        </article>
+        
+        <article>
+            <h2></h2>
+            <p></p>
         </article>
 
   </div>
